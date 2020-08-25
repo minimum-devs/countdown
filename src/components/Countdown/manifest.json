@@ -1,0 +1,202 @@
+{
+  "displayName": "Countdown",
+  "defaultWidth": 320,
+  "defaultHeight": 150,
+  "resizeX": true,
+  "resizeY": true,
+  "components": "./index.js",
+  "icon": "./example-thumbnail.png",
+  "props": [
+    {
+      "name": "until",
+      "displayName": "Number (in seconds) to count down from",
+      "type": "number"
+    },
+    {
+      "name": "format",
+      "displayName": "Countdown Format",
+      "type": "number",
+      "default": 2,
+      "control": {
+        "type": "menu",
+        "options": [
+          {
+            "label": "Only seconds",
+            "value": 0
+          },
+          {
+            "label": "Minutes and Seconds",
+            "value": 1
+          },
+          {
+            "label": "Hours, Minutes and Seconds",
+            "value": 2
+          },
+          {
+            "label": "Days, Hours, Minutes and Seconds",
+            "value": 3
+          }
+        ]
+      }
+    }
+  ],
+  "childComponents": [
+    {
+      "displayName": "Timer",
+      "name": "timer",
+      "props": [
+        {
+          "name": "size",
+          "displayName": "Timer Size",
+          "type": "number",
+          "default": 30,
+          "control": {
+            "type": "slider",
+            "min": 1,
+            "max": 100
+          }
+        },
+        {
+          "name": "backgroundColor",
+          "displayName": "Background Color",
+          "type": "color"
+        },
+        {
+          "name": "borderColor",
+          "displayName": "Border Color",
+          "type": "color",
+          "default": "@text"
+        },
+        {
+          "name": "borderWidth",
+          "displayName": "Border Width",
+          "type": "number",
+          "default": 2,
+          "control": {
+            "type": "slider",
+            "min": 0,
+            "max": 10
+          }
+        },
+        {
+          "name": "fontColor",
+          "displayName": "Font Color",
+          "type": "color",
+          "default": "@text"
+        },
+        {
+          "name": "fontWeight",
+          "displayName": "Font Weight",
+          "type": "text",
+          "default": "normal",
+          "control": {
+            "type": "menu",
+            "options": [
+              {
+                "label": "Normal",
+                "value": "normal"
+              },
+              {
+                "label": "Bold",
+                "value": "bold"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "displayName": "Actions",
+      "name": "actions",
+      "props": [
+        {
+          "name": "clickAction",
+          "displayName": "Click Actions",
+          "type": "action"
+        },
+        {
+          "name": "finishAction",
+          "displayName": "Countdown Finished Actions",
+          "type": "action"
+        }
+      ]
+    },
+    {
+      "displayName": "Separator",
+      "name": "separator",
+      "props": [
+        {
+          "name": "enabled",
+          "type": "boolean",
+          "default": false
+        },
+        {
+          "name": "separatorColor",
+          "displayName": "Separator Color",
+          "type": "color",
+          "default": "@text"
+        }
+      ]
+    },
+    {
+      "displayName": "Labels",
+      "name": "labels",
+      "props": [
+        {
+          "name": "enabled",
+          "type": "boolean",
+          "default": false
+        },
+        {
+          "name": "fontColor",
+          "displayName": "Font Color",
+          "type": "color",
+          "default": "@text"
+        },
+        {
+          "name": "seconds",
+          "displayName": "Seconds Text",
+          "type": "text",
+          "default": "Seconds"
+        },
+        {
+          "name": "minutes",
+          "displayName": "Minutes Text",
+          "type": "text",
+          "default": "Minutes"
+        },
+        {
+          "name": "hours",
+          "displayName": "Hours Text",
+          "type": "text",
+          "default": "Hours"
+        },
+        {
+          "name": "days",
+          "displayName": "Days Text",
+          "type": "text",
+          "default": "Days"
+        },
+        {
+          "name": "fontWeight",
+          "displayName": "Font Weight",
+          "type": "text",
+          "default": "normal",
+          "control": {
+            "type": "menu",
+            "options": [
+              {
+                "label": "Normal",
+                "value": "normal"
+              },
+              {
+                "label": "Bold",
+                "value": "bold"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

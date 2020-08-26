@@ -1,6 +1,6 @@
 {
   "name": "countdown",
-  "description": "Countdown component that lets you count down in style 😎",
+  "description": "Have your app count down in style 😎",
   "author": "Minimum Studio",
   "version": "1.0.0",
   "main": "index.js",

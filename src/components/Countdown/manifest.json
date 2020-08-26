@@ -5,7 +5,7 @@
   "resizeX": true,
   "resizeY": true,
   "components": "./index.js",
-  "icon": "./example-thumbnail.png",
+  "icon": "./icon.png",
   "props": [
     {
       "name": "until",

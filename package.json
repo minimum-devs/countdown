@@ -1,10 +1,10 @@
 {
   "name": "countdown",
-  "description": "",
+  "description": "Countdown component that lets you count down in style 😎",
+  "author": "Minimum Studio",
   "version": "1.0.0",
   "main": "index.js",
   "license": "ISC",
-  "author": "",
   "scripts": {
     "start": "adalo dev",
     "login": "adalo login",

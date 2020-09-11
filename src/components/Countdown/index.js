@@ -34,7 +34,6 @@ class Countdown extends Component {
         hours,
         days,
       },
-      separator: { enabled: enabledSpr, separatorColor },
     } = this.props;
 
     return (
@@ -53,8 +52,7 @@ class Countdown extends Component {
           timeToShow={this.getFormat(format)}
           timeLabels={this.getLabels(enabledLbls, format, seconds, minutes, hours, days)}
           timeLabelStyle={{ color: fontColorLbls, fontWeight: fontWeightLbls }}
-          separatorStyle={{ color: separatorColor }}
-          showSeparator={enabledSpr}
+          showSeparator={false}
           onPress={this.onPress}
           onFinish={this.onFinish}
         />

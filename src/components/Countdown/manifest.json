@@ -1,9 +1,9 @@
 {
   "displayName": "Countdown",
-  "defaultWidth": 320,
-  "defaultHeight": 150,
-  "resizeX": true,
-  "resizeY": true,
+  "defaultWidth": 220,
+  "defaultHeight": 90,
+  "resizeX": false,
+  "resizeY": false,
   "components": "./index.js",
   "icon": "./icon.png",
   "props": [
@@ -118,23 +118,6 @@
           "name": "finishAction",
           "displayName": "Countdown Finished Actions",
           "type": "action"
-        }
-      ]
-    },
-    {
-      "displayName": "Separator",
-      "name": "separator",
-      "props": [
-        {
-          "name": "enabled",
-          "type": "boolean",
-          "default": false
-        },
-        {
-          "name": "separatorColor",
-          "displayName": "Separator Color",
-          "type": "color",
-          "default": "@text"
         }
       ]
     },

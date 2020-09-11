@@ -2,7 +2,7 @@
   "name": "countdown",
   "description": "Have your app count down in style 😎",
   "author": "Minimum Studio",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "license": "ISC",
   "scripts": {
